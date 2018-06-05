@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.4.6" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/plumber_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/plumber/plumber_{{ version }}.tar.gz
-  sha256: 30a486d2d59e5e0c68fce27142ed4d0391b67d1c20cfa4449d1110981f4a997f
+  sha256: 878417c99f00f0c5e163217714eeb87a2a6bd7561417c3dc5a51784ab5cfb7b0
 
 build:
   number: 0
