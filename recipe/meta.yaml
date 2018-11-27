@@ -15,7 +15,8 @@ source:
   sha256: 331a4850a436f715eea3493bbf12ddf50201803c8fce3e670ba293d3cfc5ab3b
 
 build:
-  number: 0
+  noarch: generic
+  number: 1000
 
   rpaths:
     - lib/R/lib/
@@ -28,13 +29,15 @@ requirements:
     - r-jsonlite >=0.9.16
     - r-r6 >=2.0
     - r-stringi >=0.3.0
-
+    - r-crayon
   run:
     - r-base
     - r-httpuv >=1.2.3
     - r-jsonlite >=0.9.16
     - r-r6 >=2.0
     - r-stringi >=0.3.0
+    - r-crayon
+
 
 test:
   commands:
