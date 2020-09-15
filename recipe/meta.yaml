@@ -1,4 +1,4 @@
-{% set version = "0.4.6" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plumber_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plumber/plumber_{{ version }}.tar.gz
-  sha256: 878417c99f00f0c5e163217714eeb87a2a6bd7561417c3dc5a51784ab5cfb7b0
+  sha256: 106510e71c0535f194ce018ea0abef69af66d310197752f100c75c722a3e1f1e
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -27,16 +27,30 @@ requirements:
     - r-base
     - r-r6 >=2.0.0
     - r-crayon
-    - r-httpuv >=1.2.3
+    - r-httpuv >=1.5.0
     - r-jsonlite >=0.9.16
+    - r-lifecycle
+    - r-magrittr
+    - r-mime
+    - r-promises >=1.1.0
+    - r-sodium
     - r-stringi >=0.3.0
+    - r-swagger >=3.33.0
+    - r-webutils >=1.1
   run:
     - r-base
     - r-r6 >=2.0.0
     - r-crayon
-    - r-httpuv >=1.2.3
+    - r-httpuv >=1.5.0
     - r-jsonlite >=0.9.16
+    - r-lifecycle
+    - r-magrittr
+    - r-mime
+    - r-promises >=1.1.0
+    - r-sodium
     - r-stringi >=0.3.0
+    - r-swagger >=3.33.0
+    - r-webutils >=1.1
 
 test:
   commands:
@@ -48,10 +62,10 @@ about:
   license: MIT
   summary: Gives the ability to automatically generate and serve an HTTP API from R functions using the annotations in the R documentation around your functions.
   license_family: MIT
-
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
+
 extra:
   recipe-maintainers:
     - conda-forge/r

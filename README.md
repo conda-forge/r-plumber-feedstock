@@ -5,7 +5,7 @@ Home: https://www.rplumber.io (site) https://github.com/trestletech/plumber (dev
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Gives the ability to automatically generate and serve an HTTP API from R functions using the annotations in the R documentation around your functions.
 
