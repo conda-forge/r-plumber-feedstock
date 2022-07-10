@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/plumber_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plumber/plumber_{{ version }}.tar.gz
-  sha256: f1a6b3829fcc71823e3681eb4d37f97a029d9e8aa96145fe02c70a0ffa1e9967
+  sha256: eca9464622666033270ec0d9c86a7101360f041432db2932433bcc9c5ddfc0d1
 
 build:
   merge_build_host: true  # [win]
