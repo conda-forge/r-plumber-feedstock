@@ -1,11 +1,11 @@
-About r-plumber
-===============
+About r-plumber-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plumber-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.rplumber.io (site) https://github.com/trestletech/plumber (dev)
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-plumber-feedstock/blob/main/LICENSE.txt)
 
 Summary: Gives the ability to automatically generate and serve an HTTP API from R functions using the annotations in the R documentation around your functions.
 
